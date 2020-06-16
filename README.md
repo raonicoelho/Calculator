@@ -1,0 +1,2 @@
+# calculator
+ Practicing JS skills
