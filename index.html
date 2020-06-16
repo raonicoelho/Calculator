@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <script src="dark-mode.js" defer></script>
+</head>
+
+<body>
+    <div class="background">
+        <div class="calculator-line">
+            <div class="calculator-body">
+                <div class="calculator-shadow">
+                    <div class="calculator-light">
+                        <div class="calculator-container">
+                            <hr class="line-detail-two" style="border: none;">
+                            <hr class="line-detail-one" style="border: none;">
+                            <div>
+                                <div class="output-body">
+                                    <div class="output-light">
+                                        <div class="output-shadow">
+                                            <div class="output-line">
+                                                <div class="output-inside-body">
+                                                    <div class="output-inside-light">
+                                                        <div class="output-inside-shadow">
+                                                            <div class="output-inside-line">
+                                                                <div class="glass-1"></div>
+                                                                <div class="glass-2"></div>
+                                                                <div class="output">
+                                                                    <div data-previous-operand class="previous-operand">
+                                                                    </div>
+                                                                    <div data-current-operand class="current-operand">
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="calculator-grid">
+                                    <button data-all-clear class="span-two">
+                                        <div class="button-body">
+                                            <div class="button-inner-shadow">
+                                                <div class="button-light">
+                                                    <div class="button-shadow">
+                                                        <div class="button-line">AC</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </button>
+                                    <button data-delete>
+                                        <div class="button-body">
+                                            <div class="button-inner-shadow">
+                                                <div class="button-light">
+                                                    <div class="button-shadow">
+                                                        <div class="button-line">DEL</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </button>
+                                    <button data-operation>
+                                        <div class="button-body">
+                                            <div class="button-inner-shadow">
+                                                <div class="button-light">
+                                                    <div class="button-shadow">
+                                                        <div class="button-line">÷</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </button>
+                                    <button data-number>
+                                        <div class="button-body">
+                                            <div class="button-inner-shadow">
+                                                <div class="button-light">
+                                                    <div class="button-shadow">
+                                                        <div class="button-line">1</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </button>
+                                    <button data-number>
+                                        <div class="button-body">
+                                            <div class="button-inner-shadow">
+                                                <div class="button-light">
+                                                    <div class="button-shadow">
+                                                        <div class="button-line">2</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </button>
+                                    <button data-number>
+                                        <div class="button-body">
+                                            <div class="button-inner-shadow">
+                                                <div class="button-light">
+                                                    <div class="button-shadow">
+                                                        <div class="button-line">3</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </button>
+                                    <button data-operation>
+                                        <div class="button-body">
+                                            <div class="button-inner-shadow">
+                                                <div class="button-light">
+                                                    <div class="button-shadow">
+                                                        <div class="button-line">x</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </button>
+                                    <button data-number>
+                                        <div class="button-body">
+                                            <div class="button-inner-shadow">
+                                                <div class="button-light">
+                                                    <div class="button-shadow">
+                                                        <div class="button-line">4</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </button>
+                                    <button data-number>
+                                        <div class="button-body">
+                                            <div class="button-inner-shadow">
+                                                <div class="button-light">
+                                                    <div class="button-shadow">
+                                                        <div class="button-line">5</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </button>
+                                    <button data-number>
+                                        <div class="button-body">
+                                            <div class="button-inner-shadow">
+                                                <div class="button-light">
+                                                    <div class="button-shadow">
+                                                        <div class="button-line">6</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </button>
+                                    <button data-operation>
+                                        <div class="button-body">
+                                            <div class="button-inner-shadow">
+                                                <div class="button-light">
+                                                    <div class="button-shadow">
+                                                        <div class="button-line">+</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </button>
+                                    <button data-number>
+                                        <div class="button-body">
+                                            <div class="button-inner-shadow">
+                                                <div class="button-light">
+                                                    <div class="button-shadow">
+                                                        <div class="button-line">7</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </button>
+                                    <button data-number>
+                                        <div class="button-body">
+                                            <div class="button-inner-shadow">
+                                                <div class="button-light">
+                                                    <div class="button-shadow">
+                                                        <div class="button-line">8</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </button>
+                                    <button data-number>
+                                        <div class="button-body">
+                                            <div class="button-inner-shadow">
+                                                <div class="button-light">
+                                                    <div class="button-shadow">
+                                                        <div class="button-line">9</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </button>
+                                    <button data-operation>
+                                        <div class="button-body">
+                                            <div class="button-inner-shadow">
+                                                <div class="button-light">
+                                                    <div class="button-shadow">
+                                                        <div class="button-line">-</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </button>
+                                    <button data-number>
+                                        <div class="button-body">
+                                            <div class="button-inner-shadow">
+                                                <div class="button-light">
+                                                    <div class="button-shadow">
+                                                        <div class="button-line">.</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </button>
+                                    <button data-number>
+                                        <div class="button-body">
+                                            <div class="button-inner-shadow">
+                                                <div class="button-light">
+                                                    <div class="button-shadow">
+                                                        <div class="button-line">0</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </button>
+                                    <button data-equals class="span-two">
+                                        <div class="button-body">
+                                            <div class="button-inner-shadow">
+                                                <div class="button-light">
+                                                    <div class="button-shadow">
+                                                        <div class="button-line">=</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+            </label>
+        </div>
+    </div>
+</body>
+
+</html>
